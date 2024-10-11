@@ -1,0 +1,87 @@
+// пример миксина под резиновый текст:
+@mixin fluid-text {
+   font-size: clamp( 16px, 0.83vw, 18px);
+   line-height: 1.1;
+   text-wrap: pretty;
+   justify-content: left;
+}
+
+ 
+ @mixin fluid-h1 {
+   font-size: clamp(41.88px, 2.18vw, 45px); /* H1: рассчитано по золотому сечению */
+    line-height:1.3;
+    text-wrap: balance;
+ }
+ 
+ @mixin fluid-title {
+   font-size: clamp(25.89px, 1.35vw, 28px); /* Заголовки */
+    line-height: 1.2;
+    text-wrap: balance;
+    justify-content: center;
+ }
+// миксин ограничиющего контейнера: ограничиваем контентную часть блока
+
+@mixin container {
+   width: 100%;
+   max-width: 100vw; 
+   height: inherit;
+   display: flex;
+   align-items: center;
+   flex-flow: column nowrap;
+   border: 1px solid green;
+ 
+ 
+
+}
+ 
+   
+
+// mixin отзывчивого  блока 
+@mixin responsive {
+  width: 100%;
+  max-width: 100vw;
+  padding-inline: 0.8rem;
+}
+
+@mixin visually-hidden {
+ position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+// mixin for snooth transition: 
+@mixin smooth-transition {
+  transition: all 300ms ease-out;
+} 
+// верстаем кнопку: 
+@mixin button {
+  width: 320px;
+  height: 66px;
+  padding: 12px;
+  margin: 6px;
+  text-align: center;
+  background-color: var(--accent-color);
+  border: 1px solid var(--text-color);
+  border-radius: 6px;
+  letter-spacing: 10%;
+  font-weight: 700;
+  @include smooth-transition();
+  @include tablet {
+    width: calc(320px / 1.618);
+    height: 45px;
+    padding: 8px;
+    margin: 4px;
+  }
+  @include hover {
+    box-shadow: 4px 12px 0 var(--hover-color);
+  }
+  
+}
+ 
+ 

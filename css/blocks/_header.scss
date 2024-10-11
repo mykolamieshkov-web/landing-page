@@ -1,0 +1,51 @@
+.header {
+   @include responsive;
+   height: 80px;
+   background-color: var(--border-color);
+   &__content {
+      margin-block: 12px;
+   }
+   //nav 
+   nav {
+      justify-content: space-between;
+      gap: 3.8rem;
+      flex-flow: row nowrap;
+      @include tablet {
+         flex-flow: row wrap;
+         row-gap: 0.4rem;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+
+		// .header__links
+
+		&__links {
+         justify-content: space-around;
+         align-items: center;
+         gap: var(--margin-x);
+         list-style-type: none;
+         
+		}
+
+		// .header__links--item
+
+		&__links--item {
+         margin-left: 8px;
+         padding: 0;
+         text-wrap: nowrap;
+         @include smooth-transition;
+
+         @include hover {
+            color: var(--accent-color);
+         }
+		}
+     
+}
+
+
+
+
+    
+ 
+

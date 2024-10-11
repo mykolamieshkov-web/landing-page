@@ -1,0 +1,40 @@
+body, html {
+ scroll-behavior: smooth;
+width: 100%;
+height: auto;
+min-height: 100%;
+// семейство шрифтов
+font-family: "Lato", sans-serif;
+background-color: var(--primary-color);
+
+
+
+}
+// параграфы и ссылки с резиновым текстом
+a, p {
+    @include fluid-text;
+    color: var(--text-color);
+}
+// резиновые заголовки
+h1 {
+    @include fluid-h1;
+    color: var(--header-color);
+}
+h2, h3 {
+    @include fluid-title;
+}
+// скрываем тескт-подсказку для кнопок
+
+.visually-hidden {
+ @include visually-hidden; 
+  }
+//   подключение ограничивающего контейнера:
+  .content {
+    @include container;
+  }
+  // подключаем стили кнопок:
+  .button {
+    @include button;
+    
+  }
+
