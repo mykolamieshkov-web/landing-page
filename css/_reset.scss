@@ -6,6 +6,7 @@
    margin: 0;
    border: 0;
    box-sizing: border-box;
+  
 
  
    &:before,
@@ -30,7 +31,7 @@ img {
 button {
   all: initial;
 }
-nav, ul {
-  display: flex;
+ul {
+  list-style: none;
 }
 

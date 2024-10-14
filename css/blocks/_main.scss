@@ -1,4 +1,15 @@
 main.main {
-    flex-direction: column;
-    row-gap: 1.1rem;
+    width: min(100%, 100vw);
+    padding-inline: 12px;
+   
+}
+// утилитарный класс по ограниченю контента: 
+.wrapper-container {
+    width: min(100%, 1600px);
+    padding: 10px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin-top: 3.5rem;
 }

@@ -1,51 +1,52 @@
 .header {
-   @include responsive;
-   height: 80px;
+   width: 100%;
+   height: 115px;
    background-color: var(--border-color);
-   &__content {
-      margin-block: 12px;
-   }
-   //nav 
-   nav {
+
+
+   // .header__navigation
+
+   &__navigation {
+      height: inherit; //даємо висоту відносно батьківського блоку
+      padding: 12px 1rem;
+      display: flex;
       justify-content: space-between;
-      gap: 3.8rem;
-      flex-flow: row nowrap;
-      @include tablet {
-         flex-flow: row wrap;
-         row-gap: 0.4rem;
+      align-items: center;
+      flex-flow: row wrap;    // даємо можливість вставати в два ряди за потреби
+      gap: 10px;
+       @include mobile {
          justify-content: center;
-         align-items: center;
-      }
+         row-gap: 1.1rem;
+       }
+
    }
 
-		// .header__links
+   // .header__links
 
-		&__links {
-         justify-content: space-around;
-         align-items: center;
-         gap: var(--margin-x);
-         list-style-type: none;
-         
-		}
+   &__links {
+      display: flex;
+      gap: 1rem;
+      flex-flow: row nowrap;
+   }
 
-		// .header__links--item
+   // .header__links--item
 
-		&__links--item {
-         margin-left: 8px;
-         padding: 0;
-         text-wrap: nowrap;
-         @include smooth-transition;
+   &__links--item { 
+      margin-left: 2px;
+      height: auto;
+      @include smooth-transition();
+      @include hover {
+         color: var(--hover-color);
+      }
 
-         @include hover {
-            color: var(--accent-color);
-         }
-		}
-     
+   }
+
+   // .header__btn
+
+   &__btn { 
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+   }
 }
-
-
-
-
-    
- 
 
