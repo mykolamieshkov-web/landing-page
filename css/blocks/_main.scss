@@ -1,15 +1,21 @@
 main.main {
     width: min(100%, 100vw);
     padding-inline: 12px;
+   margin-bottom: 2rem;
+   overscroll-behavior-y: none; 
+   @include mobile {
+    padding-inline: 4px;
+    
+   }
    
 }
 // утилитарный класс по ограниченю контента: 
 .wrapper-container {
-    width: min(100%, 1600px);
+    width: min(100%, 1440px);
     padding: 10px 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
+   margin: 0 auto;
     margin-top: 3.5rem;
+    @include mobile {
+        padding: 8px;
+    }
 }

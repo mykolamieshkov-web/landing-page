@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mykola Mieshkov | Лендинґи</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
   <header class="header">
   <nav class="header__navigation" role="navigation">
     <div class="header__links">
-      <a href="#" class="header__links--item">
+      <a href="#about" class="header__links--item">
        Про мене</a> 
-       <a href="#" class="header__links--item">
+       <a href="#services" class="header__links--item">
         Послуги</a> 
-        <a href="#" class="header__links--item">
+        <a href="#form" class="header__links--item">
         Зв'затися
       </a>
     </div>
     <div class="header__btn">
-      <a href="#" class="button">Забронювати 
-       Консультацію <span class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
+      <a href="#form" class="button">Забронювати 
+       Консультацію <span  aria-hidden="true"class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
     </div>
   </nav>
   </header>
@@ -38,12 +45,12 @@
             вашого бренду</p>
         </div>
         <div class="hero__content--cta">
-          <a href="#" class="button">Забронювати <br>
-            Консультацію <span class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
-            <a href="#" class="button">Замовити <br>  
-              Сайт <span class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
+          <a href="#form" class="button">Забронювати <br>
+            Консультацію <span aria-hidden="true" class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
+            <a href="#form" class="button">Замовити <br>  
+              Сайт <span aria-hidden="true" class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
         </div>
-        <div class="hero__content--statistic">
+        <div data-aos="zoom-out" data-aos-duration="3600" class="hero__content--statistic">
           <div class="statistic">
             <h4>30+</h4>
             <p>Опублікованих Лендинґів</p>
@@ -56,12 +63,301 @@
       </div>
     </div>
   </div>
+  </section>
+  <section id="about">
+    <div class="wrapper-container">
+      <div class="about">
+        <div class="about__content">
+          <div class="about__content--header">
+            <h3>Коротко <br> Про Мене</h3>
+          </div>
+          <div class="about__content--paragraph">
+            <p>Я, Мєшков Микола,зі мною за тиждень ви<br> отримаєте сучасну посадкову сторінку, що <br> працює у якості диджитал-візитної картки для<br> вашого бізнесу </p>
+          </div>
+          <div class="hero__content--cta">
+            <a href="#form" class="button">Забронювати <br>
+              Консультацію <span  aria-hidden="true"class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
+              <a href="#form" class="button">Мої <br>  
+                Послуги<span aria-hidden="true" class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
+          </div>
+        </div>
+        <div  class="about__photo" data-aos="flip-down" data-aos-duration="3800">
+          <img src="./img/main/about/01.webp" alt="фото профілю" width="100%" height="100%">
+        </div>
+      </div>
+    </div>
 
   </section>
+  <section id="services">
+    <div class="container-wrapper">
+      <div class="services">
+        <div class="services__header">
+          <h3> Чому варто<br> 
+            співпрацювати зі мною? </h3>
+        </div>
+        <div class="services__cards">
+          <div data-aos="flip-up" data-aos-duration="3800" class="services__cards--card">
+            <h5>Поетапне створення сайту</h5>
+            <p>Визначені результати в обумовлені терміни.</p>
+              <div class="services__cards--counter">
+                <p>1</p>
+                <img src="./img/main/services/icons/01.svg" alt="icon 01" width="66px" height="66px" loading="lazy">
+              </div>
+            </p>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="3800" class="services__cards--card">
+            <h5>Постійний зворотній зв’язок</h5>
+            <p>Мій пріорітет — <br>твій проект.</p>
+              <div class="services__cards--counter">
+                <p>2</p>
+                <img src="./img/main/services/icons/02.svg" alt="icon 01" width="66px" height="66px" loading="lazy">
+              </div>
+            </p>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="3800" class="services__cards--card">
+            <h5>Сайт за тиждень</h5>
+            <p>Визначені терміни виконання — найкращий контроль якості</p>
+              <div class="services__cards--counter">
+                <p>3</p>
+                <img src="./img/main/services/icons/03.svg" alt="icon 01" width="66px" height="66px" loading="lazy">
+              </div>
+            </p>
+          </div>
+          <div data-aos="flip-up" data-aos-duration="3800" class="services__cards--card">
+            <h5>Публікація сторінки</h5>
+            <p>Замовник отримує проект у вигляді готового покликання.</p>
+              <div class="services__cards--counter">
+                <p>4</p>
+                <img src="./img/main/services/icons/04.svg" alt="icon 01" width="66px" height="66px" loading="lazy">
+              </div>
+            </p>
+          </div>
+        </div>
+        <div class="services__btn"><a href="#form" class="button">Забронювати <br>
+          Консультацію <span class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a></div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+   <div class="wrapper-container">
+    <div class="portfolio">
+      <div class="portfolio__header">
+        <h3>Приклади робіт</h3>
+      </div>
+      <div class="portfolio__charts">
+        <div class="portfolio__charts--container">
+          <p>HTML</p> <!-- skill-->
+          <div class="portfolio__charts--chart"> <!-- wrapper for color-->
+            <div class="portfolio__charts--95"> <!--procentage of color-->
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__charts--container">
+          <p>SCSS</p> <!-- skill-->
+          <div class="portfolio__charts--chart"> <!-- wrapper for color-->
+            <div class="portfolio__charts--90"> <!--procentage of color-->
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__charts--container">
+          <p>Animate JS</p> <!-- skill-->
+          <div class="portfolio__charts--chart"> <!-- wrapper for color-->
+            <div class="portfolio__charts--50"> <!--procentage of color-->
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__charts--container">
+          <p>Responsive 
+            Design
+          </p> <!-- skill-->
+          <div class="portfolio__charts--chart"> <!-- wrapper for color-->
+            <div class="portfolio__charts--80"> <!--procentage of color-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__content--cases">
+        <div class="portfolio__cases--case">
+          <div class="portfolio__cases--text">
+            <p> <a class="link" target="_blank" href="https://mykolamieshkov-web.github.io/Relvise/" >Relvise </a><br>
+              Ця <span class="orange-text">посадкова сторінка</span> є  ефективним інструментом для залучення клієнтів. Вона має <span class="orange-text">мінімалістичний дизайн,</span> чітку структуру та містить всю необхідну інформацію.
+              Виконання сторінки підлаштовується під всі <span class="orange-text">екрани пристроїв </span>
+              </p>
+            <a target="_blank" href="https://mykolamieshkov-web.github.io/Relvise/" class="button" > Переглянути 
+              Кейс <span aria-hidden="true" class="visually-hidden">  доторкніться, щоб переглянути кейс</span> </a>
+          </div>
+          <div class="portfolio__cases--image">
+            <img src="./img/portfolio/01.webp" alt=" landing page for business" width="300px" height="300px">
+          </div>
+        </div>
+        <div class="portfolio__cases--case">
+          <div class="portfolio__cases--text">
+            <p> <a class="link" target="_blank"  href="https://mykolamieshkov-web.github.io/TRY-global/" >Try-Global </a> <br>
+              <span class="orange-text">Редизайн</span> посадкової сторінки для волонтерської організації. 
+              Структура сторінки розроблена з метою 
+              <span class="orange-text">збільшення конверсії</span>
+              </p>
+            <a target="_blank" href="https://mykolamieshkov-web.github.io/TRY-global/" class="button" > Переглянути 
+              Кейс <span aria-hidden="true" class="visually-hidden">  доторкніться, щоб переглянути кейс</span> </a>
+          </div>
+          <div class="portfolio__cases--image">
+            <img src="./img/portfolio/02.webp" alt="landing page for conversion" width="300px" height="300px">
+          </div>
+        </div>
+        <div class="portfolio__cases--case">
+          <div class="portfolio__cases--text">
+            <p> <a  target="_blank" class="link"  href="https://empire-bakery.netlify.app/">Empire Bakery </a><br>
+                Демонстративний дизайн для пекарні. 
+              Класичні кольори пекарні та <span class="orange-text">зручна навігація сторінкою</span> сприяють збільшенню <span class="orange-text">продажів товару </span>
+              </p>
+            <a target="_blank" href="https://empire-bakery.netlify.app/"  class="button"> Переглянути 
+              Кейс <span aria-hidden="true" class="visually-hidden">  доторкніться, щоб переглянути кейс</span> </a>
+          </div>
+          <div class="portfolio__cases--image">
+            <img src="./img/portfolio/03.webp" alt="landing page for conversion" width="300px" height="300px">
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+  </section>
+    <section id="prices">
+      <div class="wrapper-container">
+        <div class="prices">
+          <div class="prices__header">
+            <h3>Цінові Категорії</h3>
+          </div>
+          <div class="prices__content">
+            <div data-aos="flip-up" data-aos-duration="3800" class="prices__box">
+              <h5>Тільки Верстка</h5>
+              <p>100$</p>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="3800" class="prices__box">
+              <h5>Дизайн + Мобільна версія</h5>
+              <p>250$</p>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="3800" class="prices__box">
+              <h5>Розробка лендинґу</h5>
+              <p>500$</p>
+            </div>
+          </div>
+          <div class="prices__btn">
+            <a href="#form" class="button">Забронювати 
+              Консультацію <span  aria-hidden="true"class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="stages">
+      <div class="wrapper-container">
+        <div class="stages">
+          <div class="stages__header">
+            <h3>Посадкова сторінка:<br>
+              Етапи роботи</h3>
+          </div>
+          <div class="stages__content">
+            <div class="stages__box">
+              <h4>Аналіз 
+                конкурентів</h4>
+              <p>Зробимо вас кращими у ніші</p>
+              <div class="stages__box--numeration">
+                <p>1</p>
+                <img src="./img/main/stages/icons/01.svg" alt=" icon stages" width="66" height="66" loading="lazy">
+              </div>
+            </div>
+            <div class="stages__box">
+              <h4>Розробка дизайну<br> 
+                + мобільна версія</h4>
+              <p>Можливість побачити майбутній  проект до публікації</p>
+              <div class="stages__box--numeration">
+                <p>2</p>
+                <img src="./img/main/stages/icons/02.svg" alt=" icon stages" width="66" height="66" loading="lazy">
+              </div>
+            </div>
+            <div class="stages__box">
+              <h4>Перенесення дизайну 
+                в <br>єдиний веб-стандарт</h4>
+              <p>Приваблива сторінка незалежно від пристроїв та браузерів</p>
+              <div class="stages__box--numeration">
+                <p>3</p>
+                <img src="./img/main/stages/icons/03.svg" alt=" icon stages" width="66" height="66" loading="lazy">
+              </div>
+            </div>
+            <div class="stages__box">
+              <h4>Публікація <br>
+              сторінки</h4>
+              <p>Ви отримаєте проект у вигляді готового покликання</p>
+              <div class="stages__box--numeration">
+                <p>4</p>
+                <img src="./img/main/stages/icons/04.svg" alt=" icon stages" width="66" height="66" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="stages__btn">
+            <a href="#form" class="button">Забронювати <br>
+              Консультацію <span class="visually-hidden">  доторкніться, щоб перейти до заповнення форми</span> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="form-sending">
+      <div class="content-wrapper">
+        <div class="form__header">
+          <h3>Забронюйте  безкоштовну<br> 
+            консультацію :</h3>
+        </div>
+        <form id="form">
+          <div class="field">
+            <label for="from_name">Ваше ім'я</label>
+            <input type="text" name="from_name" id="from_name">
+          </div>
+          <div class="field">
+            <label for="email_id">Електронна скринька</label>
+            <input type="text" name="email_id" id="email_id">
+          </div>
+          <div class="field">
+            <label for="message">Повідомлення</label>
+            <input type="text" name="message" id="message">
+          </div>
+        
+          <input type="submit" id="button" value="Зв'язатися"  class="button">
+        </form>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        
+        <script type="text/javascript">
+          emailjs.init('f808FNR2rvIl-hkuM')
+        </script>
+        <script src="js/mailer.js"></script>
+      </div>
+    </section>
+    <div class="wrapper-container">
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100017196705233" role="link">
+          <img src="./img/main/social/icons/01.svg" alt="social-media" class="social__icon" width="50px" height="50px">
+        </a>
+        <a href="https://www.linkedin.com/in/mykola-mieshkov010302/" role="link">
+          <img src="./img/main/social/icons/02.svg" alt="social-media" class="social__icon" width="50px" height="50px">
+        </a>
+        <a href="https://wa.me/+0681032836" role="link">
+          <img src="./img/main/social/icons/03.svg" alt="social-media" class="social__icon" width="50px" height="50px">
+        </a>
+        <a href="mailto:mykolamieshkov@gmail.com" role="link">
+          <img src="./img/main/social/icons/04.svg" alt="social-media" class="social__icon" width="50px" height="50px">
+        </a>
+        <a href="https://github.com/mykolamieshkov-web" role="link">
+          <img src="./img/main/social/icons/05.svg" alt="social-media" class="social__icon" width="50px" height="50px">
+        </a>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <p>Mykola Mieshkov |</p>
     <p>@2024</p>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+.about { 
+    margin-top: 30px;
+    width: 100%;
+    height:min-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    @include tablet {
+        justify-content: center;
+        align-items: center;
+        flex-flow: column-reverse wrap;
+
+    }
+
+
+    // .about__content
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+        row-gap: 3.5rem;
+        @include tablet {
+            align-items: center;
+        }
+
+    }
+
+    // .about__content--header
+
+    &__content--header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            text-align:  center;
+        }
+    }
+
+    // .about__content--paragraph
+
+    &__content--paragraph {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        p {
+            letter-spacing: 2.1%;
+        }
+        @include tablet {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    // .about__photo
+
+    &__photo {
+        width: calc(571px / 1.618);
+        aspect-ratio: 1;
+    }
+
+}
+//--- 'about' is done
